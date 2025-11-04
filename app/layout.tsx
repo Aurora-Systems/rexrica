@@ -1,11 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, EB_Garamond } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
-
+const ebGaramond = EB_Garamond({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Rexrica - Diversified Business Excellence",
   description:
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${ebGaramond.className} `}>
         {children}
         <Analytics />
       </body>
