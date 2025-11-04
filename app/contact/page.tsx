@@ -10,29 +10,33 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Mail, Phone, MapPin, Clock } from "lucide-react"
-import { useState } from "react"
+import emailjs from "@emailjs/browser"
+import { FormEvent, useRef, useState } from "react"
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    sector: "",
-    message: "",
-  })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-  }
+  const [loading,set_loading] = useState<boolean>(false)
+  const [showAlert, setShowAlert] = useState(false);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const form: any = useRef(null)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
+    const send_application = (e: FormEvent) => {
+        e.preventDefault()
+        set_loading(true)
+        emailjs.sendForm("service_dbu7g11", "template_ecymzcc", form.current, {
+            publicKey: "zYdUNG_dELDUWdHJR"
+        }).then(() => {
+            alert("✅ We received your enquiry, expect a call or an email soon!")
+            form.current.reset()
+        }).catch(() => {
+            alert("⚠️ Message not sent, please try again or send us a message on our email support@aurorasystems.co.zw!")
+        }).finally(()=>{
+            set_loading(false)
+        })
+    }
+
+  
+  
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -65,16 +69,15 @@ export default function ContactPage() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form onSubmit={send_application} ref={form} className="space-y-6">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">Full Name</Label>
                           <Input
                             id="name"
-                            name="name"
+                            name="full_name"
                             placeholder="John Doe"
-                            value={formData.name}
-                            onChange={handleChange}
+                            
                             required
                           />
                         </div>
@@ -85,8 +88,7 @@ export default function ContactPage() {
                             name="email"
                             type="email"
                             placeholder="john@example.com"
-                            value={formData.email}
-                            onChange={handleChange}
+                            
                             required
                           />
                         </div>
@@ -97,11 +99,10 @@ export default function ContactPage() {
                           <Label htmlFor="phone">Phone Number</Label>
                           <Input
                             id="phone"
-                            name="phone"
+                            name="contact_number"
                             type="tel"
                             placeholder="+1 (555) 000-0000"
-                            value={formData.phone}
-                            onChange={handleChange}
+                            
                           />
                         </div>
                         <div className="space-y-2">
@@ -109,8 +110,7 @@ export default function ContactPage() {
                           <select
                             id="sector"
                             name="sector"
-                            value={formData.sector}
-                            onChange={handleChange}
+                            
                             className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                           >
                             <option value="">Select a sector</option>
@@ -135,8 +135,7 @@ export default function ContactPage() {
                           name="message"
                           placeholder="Tell us about your inquiry..."
                           rows={6}
-                          value={formData.message}
-                          onChange={handleChange}
+                          
                           required
                         />
                       </div>
