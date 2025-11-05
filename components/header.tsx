@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
@@ -25,7 +26,9 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-primary">Rexrica</span>
+          <span className="text-2xl font-bold text-primary">
+            <Image src="/logo.png" alt="Rexrica" width={200} height={100} />
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

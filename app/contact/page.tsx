@@ -62,7 +62,7 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div className="lg:col-span-2">
                 <Card>
-                  <CardHeader>
+                  <CardHeader  className="pt-6">
                     <CardTitle className="text-2xl">Send Us a Message</CardTitle>
                     <CardDescription>
                       Fill out the form below and we'll get back to you as soon as possible.
@@ -151,7 +151,7 @@ export default function ContactPage() {
               {/* Contact Information */}
               <div className="space-y-6">
                 <Card>
-                  <CardHeader>
+                  <CardHeader  className="pt-6">
                     <CardTitle>Contact Information</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -160,13 +160,14 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium">Email</p>
                         <p className="text-sm text-muted-foreground">info@rexrica.com</p>
+                        <p className="text-sm text-muted-foreground">quincy@rexrica.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <Phone className="h-5 w-5 text-primary mt-0.5" />
                       <div>
                         <p className="font-medium">Phone</p>
-                        <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                        <p className="text-sm text-muted-foreground">+263 77 457 0164</p>  
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -174,11 +175,11 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium">Address</p>
                         <p className="text-sm text-muted-foreground">
-                          123 Business Avenue
+                          67 Selous Ave,
                           <br />
-                          Suite 100
+                          Harare
                           <br />
-                          City, State 12345
+                          Zimbabwe
                         </p>
                       </div>
                     </div>
@@ -187,7 +188,7 @@ export default function ContactPage() {
                       <div>
                         <p className="font-medium">Business Hours</p>
                         <p className="text-sm text-muted-foreground">
-                          Monday - Friday: 8:00 AM - 6:00 PM
+                          Monday - Friday: 8:00 AM - 5:00 PM
                           <br />
                           Saturday: 9:00 AM - 2:00 PM
                           <br />
@@ -199,7 +200,7 @@ export default function ContactPage() {
                 </Card>
 
                 <Card>
-                  <CardHeader>
+                  <CardHeader  className="pt-6">
                     <CardTitle>Quick Links</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export function HeroSection() {
   return (
@@ -8,6 +9,7 @@ export function HeroSection() {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          <Image src="/huge-logo.png" className="mx-auto" alt="Rexrica" width={200} height={100} />
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
             Building Tomorrow's
             <span className="block text-primary mt-2">Success Today</span>
@@ -19,13 +21,10 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="text-lg px-8">
-              Explore Our Sectors
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
-              Contact Us
-            </Button>
+           
+            <Link href="/contact"><Button size="lg" variant="outline" className="text-lg px-8 bg-transparent">
+              Get Started
+            </Button></Link>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 max-w-3xl mx-auto">

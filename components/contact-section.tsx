@@ -22,7 +22,7 @@ export function ContactSection() {
           {/* Contact Info Cards */}
           <div className="space-y-6">
             <Card>
-              <CardHeader>
+              <CardHeader  className="pt-6">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-2">
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
@@ -30,25 +30,25 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <CardDescription>info@rexrica.com</CardDescription>
-                <CardDescription>support@rexrica.com</CardDescription>
+                <CardDescription>quincy@rexrica.com</CardDescription>
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader>
+              <CardHeader  className="pt-6">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-2">
                   <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <CardTitle className="text-lg">Call Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>+1 (555) 123-4567</CardDescription>
-                <CardDescription>+1 (555) 987-6543</CardDescription>
+                <CardDescription>+263 77 457 0164</CardDescription>
+                {/* <CardDescription>+1 (555) 987-6543</CardDescription> */}
               </CardContent>
             </Card>
 
             <Card>
-              <CardHeader>
+              <CardHeader className="pt-6">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-2">
                   <MapPin className="h-6 w-6 text-primary" />
                 </div>
@@ -56,11 +56,12 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  123 Business Avenue
+                67 Selous Ave
+
                   <br />
-                  Corporate District
+                  Harare
                   <br />
-                  City, State 12345
+                  Zimbabwe
                 </CardDescription>
               </CardContent>
             </Card>
@@ -68,37 +69,12 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <Card className="lg:col-span-2">
-            <CardHeader>
+            <CardHeader  className="pt-6">
               <CardTitle className="text-2xl">Send Us a Message</CardTitle>
               <CardDescription>Fill out the form below and we'll get back to you shortly.</CardDescription>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Your name" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="your@email.com" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="How can we help?" />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" placeholder="Tell us more about your inquiry..." rows={6} />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full">
-                  Send Message
-                </Button>
-              </form>
+            
             </CardContent>
           </Card>
         </div>

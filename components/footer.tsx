@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   const sectors = [
@@ -20,7 +20,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Rexrica</h3>
+            <h3 className="text-2xl font-bold mb-4">
+              <Image src="/white-logo.png" alt="Rexrica" width={200} height={100} />
+            </h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               A diversified conglomerate delivering excellence across multiple industries with a commitment to
               innovation, sustainability, and growth.
@@ -39,14 +41,14 @@ export function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#sectors"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   Our Sectors
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="#contact"
@@ -78,7 +80,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h4 className="font-semibold mb-4">Connect With Us</h4>
-            <div className="flex gap-4 mb-4">
+            {/* <div className="flex gap-4 mb-4">
               <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
@@ -91,11 +93,15 @@ export function Footer() {
               <Link href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="h-5 w-5" />
               </Link>
-            </div>
+            </div> */}
             <p className="text-sm text-primary-foreground/80">
               Email: info@rexrica.com
               <br />
-              Phone: +1 (555) 123-4567
+              Email: quincy@rexrica.com
+              <br />
+              Phone: +263 77 457 0164
+              <br/>
+              Address: 67 Selous Ave, Harare, Zimbabwe
             </p>
           </div>
         </div>
