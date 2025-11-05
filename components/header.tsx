@@ -33,6 +33,12 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:items-center lg:gap-8">
+        <Link
+            href="/"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            Home
+          </Link>
           <Link
             href="/about"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
@@ -75,8 +81,15 @@ export function Header() {
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-border bg-background">
           <div className="container mx-auto px-4 py-4 space-y-3">
+          <Link
+              href="/"
+              className="block text-sm font-medium text-foreground/80 hover:text-foreground transition-colors py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
             <Link
-              href="/#about"
+              href="/about"
               className="block text-sm font-medium text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
