@@ -27,9 +27,9 @@ export default function LogisticsPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Request Service</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function LogisticsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Truck className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Fleet Management</CardTitle>
                 </CardHeader>
@@ -82,7 +82,7 @@ export default function LogisticsPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Package className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Warehousing</CardTitle>
                 </CardHeader>
@@ -95,7 +95,7 @@ export default function LogisticsPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <MapPin className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Route Optimization</CardTitle>
                 </CardHeader>
@@ -108,7 +108,7 @@ export default function LogisticsPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Clock className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Real-Time Tracking</CardTitle>
                 </CardHeader>
@@ -121,7 +121,7 @@ export default function LogisticsPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Cargo Security</CardTitle>
                 </CardHeader>
@@ -134,7 +134,7 @@ export default function LogisticsPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Network className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Distribution Network</CardTitle>
                 </CardHeader>

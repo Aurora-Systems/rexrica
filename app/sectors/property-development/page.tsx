@@ -27,9 +27,9 @@ export default function PropertyDevelopmentPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">View Properties</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function PropertyDevelopmentPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Home className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Residential Development</CardTitle>
                 </CardHeader>
@@ -83,7 +83,7 @@ export default function PropertyDevelopmentPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Building className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Commercial Projects</CardTitle>
                 </CardHeader>
@@ -96,7 +96,7 @@ export default function PropertyDevelopmentPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Hammer className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Project Management</CardTitle>
                 </CardHeader>
@@ -109,7 +109,7 @@ export default function PropertyDevelopmentPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Key className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Property Management</CardTitle>
                 </CardHeader>
@@ -122,7 +122,7 @@ export default function PropertyDevelopmentPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Users className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Community Planning</CardTitle>
                 </CardHeader>
@@ -135,7 +135,7 @@ export default function PropertyDevelopmentPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Building2 className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Sustainable Design</CardTitle>
                 </CardHeader>

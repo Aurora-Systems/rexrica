@@ -27,9 +27,9 @@ export default function MicrofinancePage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Apply for Financing</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function MicrofinancePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Briefcase className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Business Loans</CardTitle>
                 </CardHeader>
@@ -82,7 +82,7 @@ export default function MicrofinancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Users className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Group Lending</CardTitle>
                 </CardHeader>
@@ -95,7 +95,7 @@ export default function MicrofinancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <TrendingUp className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Financial Education</CardTitle>
                 </CardHeader>
@@ -108,7 +108,7 @@ export default function MicrofinancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Transparent Terms</CardTitle>
                 </CardHeader>
@@ -121,7 +121,7 @@ export default function MicrofinancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Heart className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Community Focus</CardTitle>
                 </CardHeader>
@@ -134,7 +134,7 @@ export default function MicrofinancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Coins className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Savings Programs</CardTitle>
                 </CardHeader>

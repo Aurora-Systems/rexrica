@@ -27,9 +27,9 @@ export default function RoadConstructionPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Request a Quote</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function RoadConstructionPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Truck className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Modern Equipment</CardTitle>
                 </CardHeader>
@@ -81,7 +81,7 @@ export default function RoadConstructionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <HardHat className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Expert Team</CardTitle>
                 </CardHeader>
@@ -94,7 +94,7 @@ export default function RoadConstructionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <MapPin className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Project Planning</CardTitle>
                 </CardHeader>
@@ -107,7 +107,7 @@ export default function RoadConstructionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Clock className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Timely Delivery</CardTitle>
                 </CardHeader>
@@ -120,7 +120,7 @@ export default function RoadConstructionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <CheckCircle className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Quality Standards</CardTitle>
                 </CardHeader>
@@ -133,7 +133,7 @@ export default function RoadConstructionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Construction className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Full-Service Solutions</CardTitle>
                 </CardHeader>

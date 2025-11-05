@@ -27,9 +27,9 @@ export default function AgriculturalProductionPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Partner With Us</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function AgriculturalProductionPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Sprout className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Sustainable Practices</CardTitle>
                 </CardHeader>
@@ -81,7 +81,7 @@ export default function AgriculturalProductionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Droplets className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Smart Irrigation</CardTitle>
                 </CardHeader>
@@ -94,7 +94,7 @@ export default function AgriculturalProductionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Sun className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Climate Adaptation</CardTitle>
                 </CardHeader>
@@ -107,7 +107,7 @@ export default function AgriculturalProductionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Tractor className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Modern Equipment</CardTitle>
                 </CardHeader>
@@ -120,7 +120,7 @@ export default function AgriculturalProductionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Package className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Quality Processing</CardTitle>
                 </CardHeader>
@@ -133,7 +133,7 @@ export default function AgriculturalProductionPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Wheat className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Diverse Production</CardTitle>
                 </CardHeader>

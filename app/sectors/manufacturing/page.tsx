@@ -27,9 +27,9 @@ export default function ManufacturingPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Partner With Us</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ManufacturingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Cog className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Advanced Equipment</CardTitle>
                 </CardHeader>
@@ -83,7 +83,7 @@ export default function ManufacturingPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <CheckCircle className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Quality Control</CardTitle>
                 </CardHeader>
@@ -96,7 +96,7 @@ export default function ManufacturingPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Package className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Diverse Products</CardTitle>
                 </CardHeader>
@@ -109,7 +109,7 @@ export default function ManufacturingPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <TrendingUp className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Scalable Production</CardTitle>
                 </CardHeader>
@@ -122,7 +122,7 @@ export default function ManufacturingPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Safety Standards</CardTitle>
                 </CardHeader>
@@ -135,7 +135,7 @@ export default function ManufacturingPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Factory className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Custom Solutions</CardTitle>
                 </CardHeader>

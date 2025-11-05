@@ -27,9 +27,9 @@ export default function MiningPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function MiningPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Safety First</CardTitle>
                 </CardHeader>
@@ -81,7 +81,7 @@ export default function MiningPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Leaf className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Sustainable Practices</CardTitle>
                 </CardHeader>
@@ -94,7 +94,7 @@ export default function MiningPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <TrendingUp className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Advanced Technology</CardTitle>
                 </CardHeader>
@@ -107,7 +107,7 @@ export default function MiningPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Users className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Expert Team</CardTitle>
                 </CardHeader>
@@ -120,7 +120,7 @@ export default function MiningPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Award className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Quality Assurance</CardTitle>
                 </CardHeader>
@@ -133,7 +133,7 @@ export default function MiningPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Mountain className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Resource Management</CardTitle>
                 </CardHeader>

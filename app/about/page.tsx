@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Target, Users, Globe, Award, TrendingUp, Shield, Lightbulb, Heart } from "lucide-react"
 import Image from "next/image"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function AboutPage() {
   const values = [
@@ -92,6 +94,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
+      <Header />
       <section className="relative py-20 md:py-32 bg-gradient-to-br from-primary/10 via-background to-secondary/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -112,7 +115,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded over 25 years ago, Rexrica has grown from a single-sector operation into one of the region's
+                 Rexrica has grown from a single-sector operation into one of the region's
                   most respected diversified conglomerates. Our journey has been marked by strategic expansion,
                   unwavering commitment to quality, and a deep understanding of the industries we serve.
                 </p>
@@ -130,7 +133,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
-              <Image src="/modern-corporate-office.png" alt="Rexrica headquarters" fill className="object-cover" />
+              <Image src="/huge-logo.png" alt="Rexrica headquarters" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -229,13 +232,14 @@ export default function AboutPage() {
               <Button size="lg" asChild>
                 <Link href="/contact">Get in Touch</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
+              {/* <Button size="lg" variant="outline" asChild>
                 <Link href="/#sectors">Explore Our Sectors</Link>
-              </Button>
+              </Button> */}
             </div>
           </Card>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

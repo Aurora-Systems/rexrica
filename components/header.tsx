@@ -34,7 +34,7 @@ export function Header() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:items-center lg:gap-8">
           <Link
-            href="/#about"
+            href="/about"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
           >
             About

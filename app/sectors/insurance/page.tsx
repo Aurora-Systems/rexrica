@@ -27,9 +27,9 @@ export default function InsurancePage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Get a Quote</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ export default function InsurancePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Home className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Property Insurance</CardTitle>
                 </CardHeader>
@@ -82,7 +82,7 @@ export default function InsurancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Car className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Auto Insurance</CardTitle>
                 </CardHeader>
@@ -95,7 +95,7 @@ export default function InsurancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Heart className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Health Insurance</CardTitle>
                 </CardHeader>
@@ -108,7 +108,7 @@ export default function InsurancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Briefcase className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Business Insurance</CardTitle>
                 </CardHeader>
@@ -121,7 +121,7 @@ export default function InsurancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Users className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Life Insurance</CardTitle>
                 </CardHeader>
@@ -134,7 +134,7 @@ export default function InsurancePage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Risk Management</CardTitle>
                 </CardHeader>

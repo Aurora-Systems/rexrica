@@ -27,9 +27,9 @@ export default function ImportExportPage() {
                 <Button size="lg" asChild>
                   <Link href="/contact">Start Trading</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                {/* <Button size="lg" variant="outline" asChild>
                   <Link href="/#sectors">View All Sectors</Link>
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ImportExportPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Globe className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Global Network</CardTitle>
                 </CardHeader>
@@ -83,7 +83,7 @@ export default function ImportExportPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <FileText className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Documentation Services</CardTitle>
                 </CardHeader>
@@ -96,7 +96,7 @@ export default function ImportExportPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Shield className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Compliance Management</CardTitle>
                 </CardHeader>
@@ -109,7 +109,7 @@ export default function ImportExportPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Ship className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Freight Forwarding</CardTitle>
                 </CardHeader>
@@ -122,7 +122,7 @@ export default function ImportExportPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <TrendingUp className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Market Intelligence</CardTitle>
                 </CardHeader>
@@ -135,7 +135,7 @@ export default function ImportExportPage() {
               </Card>
 
               <Card>
-                <CardHeader>
+                <CardHeader className="pt-6">
                   <Network className="h-10 w-10 text-primary mb-4" />
                   <CardTitle>Supply Chain Solutions</CardTitle>
                 </CardHeader>
